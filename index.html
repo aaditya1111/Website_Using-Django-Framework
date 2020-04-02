@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align:center">List of Registered users</h1>
+</hr>
+
+<table border="2"  style="text-align:center;border-radius="1 px"">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Contact No.</th>
+        <th>Email Address</th>
+    </tr>
+    {% for u in users %}
+    <tr>
+        <td>{{ u.id }}</td>
+        <td>{{ u.name }}</td>
+        <td>{{ u.address }}</td>
+        <td>{{ u.contactno }}</td>
+        <td>{{ u.emailaddress }}</td>
+    </tr>
+
+
+    {% endfor %}
+</table>
+<h3 style="color:red">Rachit is most dashing Rapper in the house !!</h3>
+</body>
+</html>
